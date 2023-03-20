@@ -62,7 +62,6 @@ private fun fNotes(name: String) {
     addVector(name, note)
 }
 
-
 private fun addVector(name: String, note: Vector<Double>) {
     var student = Student(name, note)
     vectorStudent.add(student)
@@ -82,8 +81,6 @@ private fun average() {
 private fun bestAverage() {
 
     var v = vectorStudent;
-
-
 
     if ((v.get(0).note.average() > v.get(1).note.average()) &&
         (v.get(0).note.average() > v.get(2).note.average())
@@ -107,7 +104,9 @@ private fun bestAverage() {
 }
 
 private fun worseAverage() {
+    
     var v = vectorStudent;
+    
     if ((v.get(0).note.average() < v.get(1).note.average()) &&
         (v.get(0).note.average() < v.get(2).note.average())
     ) {
