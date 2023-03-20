@@ -54,8 +54,7 @@ private fun fNotes(name: String) {
             note.add(num.toDouble())
             i++;
         } else {
-            println("O caracter inserido não é um número válido")
-            if (i != 1) i--;
+            println("O caracter inserido não é um número válido")          
         }
     } while (i <= 4)
 
